@@ -17,9 +17,7 @@ pipeline {
                     docker build . -t mayurwagh/project-backend-img:latest
                     docker push mayurwagh/project-backend-img:latest
                     docker rmi mayurwagh/project-backend-img:latest
-                    kubectl apply -f ./deploy/
-
-               '''
+                '''
             }
         }
     }
